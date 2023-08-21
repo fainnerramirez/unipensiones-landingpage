@@ -128,7 +128,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
+            _groupHover={{ color: 'pink.500' }}
             fontWeight={500}>
             {label}
           </Text>
@@ -142,7 +142,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           justify={'flex-end'}
           align={'center'}
           flex={1}>
-          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'pink.500'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Box>
