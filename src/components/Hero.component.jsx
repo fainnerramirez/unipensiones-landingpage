@@ -48,6 +48,7 @@ const Hero = () => {
             <Text
               as={'span'}
               color={'pink.500'}
+              lineHeight={{base: 1, lg: 0.5}}
               fontSize={{ base: '3xl' }}
             >
               ¡Una comunidad de estudiantes que comparten el mismo viaje que tú!
@@ -88,8 +89,8 @@ const Hero = () => {
           position={'relative'}
           w={'full'}>
           <Blob
-            w={'150%'}
-            h={'150%'}
+            w={'100%'}
+            h={'180%'}
             position={'absolute'}
             top={'-20%'}
             left={0}
