@@ -48,8 +48,8 @@ const Navbar = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center' }}>
           <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
+            fontWeight={600}
             color={useColorModeValue('gray.800', 'white')}>
             Unipensiones
           </Text>
