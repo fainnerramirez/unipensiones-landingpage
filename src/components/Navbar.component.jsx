@@ -21,6 +21,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons'
+import { Link as LinkRouter } from 'react-router-dom'
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -49,7 +50,7 @@ const Navbar = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center' }}>
           <Text
             fontFamily={'heading'}
-            as = "b"
+            as="b"
             color={useColorModeValue('gray.800', 'white')}>
             Unipensiones
           </Text>
@@ -209,8 +210,7 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'Inicio',
-    href: "#"
-    
+    href: "/"
   },
   {
     label: '¿Porqué UP?',
@@ -229,7 +229,7 @@ const NAV_ITEMS = [
   },
   {
     label: '¿Como funciona UP?',
-    href: '#',
+    href: '/funcionamiento',
   },
   {
     label: 'FAQ',
@@ -237,16 +237,16 @@ const NAV_ITEMS = [
       {
         label: 'Políticas de datos UP',
         subLabel: 'Conoce como UP maneja tus datos',
-        href: '#',
+        href: '/faq',
       },
       {
         label: 'Terminos y condiciones UP',
         subLabel: 'Conoce los derechos y deberes de los usuarios UP',
-        href: '#',
+        href: '/faq',
       },
       {
         label: 'Contáctanos',
-        href: '#',
+        href: '/faq',
       },
     ]
   },

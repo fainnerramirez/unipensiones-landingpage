@@ -14,7 +14,7 @@ import {
   IconProps,
   useColorModeValue,
 } from '@chakra-ui/react'
-import hero from "../assets/hero3.png"
+import hero from "../assets/hero.png"
 
 const Hero = () => {
   return (
@@ -110,7 +110,7 @@ const Hero = () => {
               fit={'cover'}
               align={'center'}
               w={'100%'}
-              h={'100%'}
+              h={'auto'}
               src={hero}
             />
           </Box>
