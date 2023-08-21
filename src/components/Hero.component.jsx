@@ -15,6 +15,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import hero from "../assets/hero.png"
+import ModalStartHero from './ModalStartHero.component'
 
 const Hero = () => {
   return (
@@ -63,16 +64,7 @@ const Hero = () => {
             proceso sea más fácil y cómodo que nunca.
           </Text>
           <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
-            <Button
-              rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
-              px={6}
-              colorScheme={'pink'}
-              bg={'pink.500'}
-              _hover={{ bg: 'pink.400' }}>
-              Comenzar
-            </Button>
+            <ModalStartHero />
             <Button
               rounded={'full'}
               size={'lg'}
