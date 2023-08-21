@@ -49,7 +49,7 @@ const Navbar = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center' }}>
           <Text
             fontFamily={'heading'}
-            fontWeight={600}
+            as = "b"
             color={useColorModeValue('gray.800', 'white')}>
             Unipensiones
           </Text>
