@@ -37,7 +37,7 @@ const ModalStartHero = () => {
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader textAlign={'center'}>¿Cual es tu Rol?</ModalHeader>
-                    <ModalCloseButton />
+                    <ModalCloseButton _hover={{bg:"pink.500", color: "white"}}/>
                     <ModalBody>
                         <Stack direction={['column', 'row']} spacing={10} justify={'center'}>
                             <Card maxW='sm' border={'none'} boxShadow={'none'}>
