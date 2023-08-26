@@ -15,6 +15,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import hero from "../assets/hero.png"
+import HeroImage from "../assets/HeroImage.png"
 import ModalStartHero from './ModalStartHero.component'
 
 const Hero = () => {
@@ -96,14 +97,14 @@ const Hero = () => {
             rounded={'2xl'}
             boxShadow={'2xl'}
             width={'full'}
-            overflow={'hidden'}>
+            overflow={'unset'}>
             <Image
               alt={'Hero Image'}
               fit={'cover'}
               align={'center'}
               w={'100%'}
               h={'auto'}
-              src={hero}
+              src={HeroImage}
             />
           </Box>
         </Flex>

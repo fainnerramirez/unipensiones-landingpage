@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import student from "../assets/student.png";
 import anfitrion from "../assets/anfitrion.png";
+import {AiOutlineArrowRight} from "react-icons/ai"
 
 const ModalStartHero = () => {
 
@@ -30,7 +31,7 @@ const ModalStartHero = () => {
                 bg={'pink.500'}
                 _hover={{ bg: 'pink.400' }}
                 onClick={onOpen}>
-                Comenzar
+                ¡Únete a la Experiencia!
             </Button>
             <Modal isOpen={isOpen} onClose={onClose} size={'3xl'}>
                 <ModalOverlay />
@@ -51,7 +52,11 @@ const ModalStartHero = () => {
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <Button variant='solid' colorScheme='pink' width={'full'}>
+                                    <Button 
+                                        variant='solid' 
+                                        colorScheme='pink' 
+                                        width={'full'}
+                                        rightIcon={<AiOutlineArrowRight />}>
                                         Soy Estudiante
                                     </Button>
                                 </CardFooter>
@@ -68,7 +73,11 @@ const ModalStartHero = () => {
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <Button variant='solid' colorScheme='pink' width={'full'}>
+                                    <Button 
+                                        variant='solid' 
+                                        colorScheme='pink' 
+                                        width={'full'} 
+                                        rightIcon={<AiOutlineArrowRight />}>
                                         Soy Anfitrión (a)
                                     </Button>
                                 </CardFooter>
