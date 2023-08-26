@@ -40,7 +40,7 @@ const ModalStartHero = () => {
                     <ModalCloseButton />
                     <ModalBody>
                         <Stack direction={['column', 'row']} spacing={10} justify={'center'}>
-                            <Card maxW='sm'>
+                            <Card maxW='sm' border={'none'} boxShadow={'none'}>
                                 <CardBody>
                                     <Image
                                         src={student}
@@ -50,7 +50,6 @@ const ModalStartHero = () => {
                                         height={270}
                                     />
                                 </CardBody>
-                                <Divider />
                                 <CardFooter>
                                     <Button 
                                         as="a"
@@ -64,7 +63,7 @@ const ModalStartHero = () => {
                                     </Button>
                                 </CardFooter>
                             </Card>
-                            <Card maxW='sm'>
+                            <Card maxW='sm' border={'none'} boxShadow={'none'}>
                                 <CardBody>
                                     <Image
                                         src={anfitrion}
@@ -74,7 +73,6 @@ const ModalStartHero = () => {
                                         height={270}
                                     />
                                 </CardBody>
-                                <Divider />
                                 <CardFooter>
                                     <Button 
                                         variant='solid' 
