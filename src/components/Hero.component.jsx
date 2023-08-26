@@ -1,20 +1,17 @@
-import React from 'react'
 import {
-  Container,
-  Stack,
-  Flex,
   Box,
-  Heading,
-  Text,
   Button,
-  Image,
+  Container,
+  Flex,
+  Heading,
   Icon,
-  IconButton,
+  Image,
+  Stack,
+  Text,
   createIcon,
-  IconProps,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
-import hero from "../assets/hero.png"
+import React from 'react'
 import HeroImage from "../assets/HeroImage.png"
 import ModalStartHero from './ModalStartHero.component'
 
@@ -71,7 +68,8 @@ const Hero = () => {
               size={'lg'}
               fontWeight={'normal'}
               px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
+              leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}
+              >
               Ver video promocional
             </Button>
           </Stack>

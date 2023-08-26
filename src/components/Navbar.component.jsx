@@ -1,27 +1,24 @@
-import React from 'react'
 import {
-  Box,
-  Flex,
-  Text,
-  IconButton,
-  Button,
-  Stack,
-  Collapse,
-  Icon,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
-} from '@chakra-ui/react'
-import {
-  HamburgerIcon,
-  CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
 } from '@chakra-ui/icons'
-import { Link as LinkRouter } from 'react-router-dom'
+import {
+  Box,
+  Collapse,
+  Flex,
+  Icon,
+  IconButton,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Stack,
+  Text,
+  useColorModeValue,
+  useDisclosure
+} from '@chakra-ui/react'
+import React from 'react'
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure()

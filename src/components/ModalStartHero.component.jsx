@@ -1,20 +1,20 @@
-import React from 'react'
 import {
     Button,
     Card,
     CardBody,
     CardFooter,
     Divider,
-    HStack,
     Image,
     Modal,
     ModalBody,
     ModalCloseButton,
-    ModalContent, ModalFooter, ModalHeader, ModalOverlay, Stack, useDisclosure
-} from '@chakra-ui/react'
-import student from "../assets/student.png";
+    ModalContent,
+    ModalHeader, ModalOverlay, Stack, useDisclosure
+} from '@chakra-ui/react';
+import React from 'react';
+import { AiOutlineArrowRight } from "react-icons/ai";
 import anfitrion from "../assets/anfitrion.png";
-import {AiOutlineArrowRight} from "react-icons/ai"
+import student from "../assets/student.png";
 
 const ModalStartHero = () => {
 
@@ -53,6 +53,9 @@ const ModalStartHero = () => {
                                 <Divider />
                                 <CardFooter>
                                     <Button 
+                                        as="a"
+                                        href='https://unipensiones.vercel.app/'
+                                        target={'_blank'}
                                         variant='solid' 
                                         colorScheme='pink' 
                                         width={'full'}

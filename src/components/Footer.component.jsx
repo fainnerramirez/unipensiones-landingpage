@@ -46,12 +46,12 @@ const SocialButton = ({
 const Footer = () => {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg={useColorModeValue('pink.500', 'pink.900')}
+      color={useColorModeValue('white', 'white')}>
       <Container
         as={Stack}
         maxW={'6xl'}
-        py={4}
+        py={6}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
