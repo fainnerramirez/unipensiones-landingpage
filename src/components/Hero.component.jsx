@@ -24,7 +24,7 @@ const Hero = () => {
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
         <Box>
-          <Image src={Logo} borderRadius={20} />
+          <Image src={Logo} borderRadius={20} width={{base: 200, md: '100%'}}/>
         </Box>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading

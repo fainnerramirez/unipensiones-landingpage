@@ -20,7 +20,7 @@ const TextDinamic = () => {
         }, 3000); // Cambia el valor de intervalo según tus preferencias
 
         return () => clearInterval(intervalo);
-    }, []);
+    }, [indiceTexto]);
 
     return (
         <div>
@@ -32,7 +32,7 @@ const TextDinamic = () => {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Heading textAlign={'center'}>{textos[indiceTexto]}</Heading>
+                    <Heading textAlign={'center'} fontSize={25} fontWeight={'normal'}>{textos[indiceTexto]}</Heading>
                 </motion.div>
             </AnimatePresence>
         </div>
