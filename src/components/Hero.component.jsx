@@ -8,12 +8,12 @@ import {
   Image,
   Stack,
   Text,
-  createIcon,
-  useColorModeValue
+  createIcon
 } from '@chakra-ui/react'
 import React from 'react'
-import HeroImage from "../assets/hero.jpg"
 import ModalStartHero from './ModalStartHero.component'
+import TextDinamic from './DinamicText.component'
+import Logo from "../assets/logoup.png"
 
 const Hero = () => {
   return (
@@ -23,8 +23,12 @@ const Hero = () => {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
+        <Box>
+          <Image src={Logo} borderRadius={20} />
+        </Box>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
+            textAlign={'center'}
             lineHeight={0.5}
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
@@ -37,22 +41,11 @@ const Hero = () => {
             </Text>
             <br />
             <br />
-            <Text
-              as={'span'}
-              lineHeight={{ base: 1, lg: 0.5 }}
-              fontSize={{ base: '3xl' }}
-            >
-              ¡Una comunidad de estudiantes que comparten el mismo viaje que tú!
-            </Text>
           </Heading>
-          <Text color={'gray.700'} fontSize={25}>
-            ¡Bienvenidos a <Text as="b">Unipensiones!</Text> Somos una plataforma única de
-            alquiler de pensiones estudiantiles diseñada por estudiantes para estudiantes.
-            Entendemos las necesidades y preocupaciones que enfrentas al buscar alojamiento
-            durante tus años académicos, y hemos creado Unipensiones para hacer que ese
-            proceso sea más fácil y cómodo que nunca.
-          </Text>
-          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
+          <Box>
+            <TextDinamic />
+          </Box>
+          <Stack spacing={{ base: 4, sm: 6 }} justifyContent={'center'} direction={{ base: 'column', sm: 'row' }}>
             <ModalStartHero />
             <Button
               rounded={'full'}
@@ -65,23 +58,6 @@ const Hero = () => {
             </Button>
           </Stack>
         </Stack>
-        <Flex
-          flex={1}
-          flexDir={'column'}
-          justify={'center'}
-          align={'flex-start'}
-          position={'relative'}
-          w={'full'}>
-          <Image
-            borderRadius={10}
-            alt={'Hero Image'}
-            fit={'cover'}
-            align={'center'}
-            w={500}
-            h={500}
-            src={HeroImage}
-          />
-        </Flex>
       </Stack>
     </Container>
   )

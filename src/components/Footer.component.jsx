@@ -46,7 +46,7 @@ const SocialButton = ({
 const Footer = () => {
   return (
     <Box
-      bg={useColorModeValue('pink.500', 'pink.900')}
+      bg={useColorModeValue('blue.500', 'blue.900')}
       color={useColorModeValue('white', 'white')}>
       <Container
         as={Stack}
