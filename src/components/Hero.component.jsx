@@ -15,6 +15,7 @@ import ModalStartHero from './ModalStartHero.component'
 import TextDinamic from './DinamicText.component'
 import Logo from "../assets/logoup.png"
 import ModalVideoPromotional from './ModalVideoPromotional.component'
+import GroupStudents from './GroupStudents.component'
 
 const Hero = () => {
   return (
@@ -51,6 +52,9 @@ const Hero = () => {
             <ModalVideoPromotional />
           </Stack>
         </Stack>
+      </Stack>
+      <Stack>
+        <GroupStudents />
       </Stack>
     </Container>
   )
