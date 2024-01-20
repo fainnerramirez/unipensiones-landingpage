@@ -16,6 +16,7 @@ import TextDinamic from './DinamicText.component'
 import Logo from "../assets/logoup.png"
 import ModalVideoPromotional from './ModalVideoPromotional.component'
 import GroupStudents from './GroupStudents.component'
+import UseCasesUP from './UseCasesUP.component'
 
 const Hero = () => {
   return (
@@ -55,6 +56,9 @@ const Hero = () => {
       </Stack>
       <Stack>
         <GroupStudents />
+      </Stack>
+      <Stack>
+        <UseCasesUP />
       </Stack>
     </Container>
   )
