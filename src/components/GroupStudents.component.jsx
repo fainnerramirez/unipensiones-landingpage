@@ -4,9 +4,9 @@ import Group from "../assets/grupo2.png"
 
 const GroupStudents = () => {
     return (
-        <Box width={'full'}>
+        <Box width={'full'} mt={5} mb={10}>
             <Heading textAlign={'center'}>
-                Publica tu pensión y conviertete en un anfitrión
+                Encontrar tu pensión ideal nunca fue tan fácil con Unipensiones
             </Heading>
             <Image src={Group} width={'100%'} />
         </Box>
