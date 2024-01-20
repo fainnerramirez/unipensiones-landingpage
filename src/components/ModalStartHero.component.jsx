@@ -70,7 +70,8 @@ const ModalStartHero = () => {
                                                 status: 'info',
                                                 duration: 9000,
                                                 isClosable: true,
-                                                variant: 'top-accent'
+                                                variant: 'top-accent',
+                                                position: 'top'
                                             })
                                         }>
                                         Soy Estudiante
