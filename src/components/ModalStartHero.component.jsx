@@ -46,18 +46,18 @@ const ModalStartHero = () => {
                     <ModalHeader textAlign={'center'}>¿Como quieres utilizar Unipensiones?</ModalHeader>
                     <ModalCloseButton _hover={{ bg: "black", color: "white" }} />
                     <ModalBody>
-                        <Stack direction={['column', 'row']} spacing={5} justify={'center'}>
+                        <Stack direction={['row']} spacing={{base: 2, md: 5}} justify={'center'}>
                             <Card maxW='sm' border={'none'} boxShadow={'none'}>
-                                <CardBody>
+                                <CardBody p={0}>
                                     <Image
                                         src={student}
                                         alt='Green double couch with wooden legs'
                                         borderRadius='lg'
                                         width={300}
-                                        height={270}
+                                        height={{base: 200, md: 270}}
                                     />
                                 </CardBody>
-                                <CardFooter>
+                                <CardFooter p={{base: 0, md: 1}} mt={5}>
                                     <Button
                                         variant='solid'
                                         colorScheme='blue'
@@ -79,16 +79,16 @@ const ModalStartHero = () => {
                                 </CardFooter>
                             </Card>
                             <Card maxW='sm' border={'none'} boxShadow={'none'}>
-                                <CardBody>
+                                <CardBody p={0}>
                                     <Image
                                         src={anfitrion}
                                         alt='Green double couch with wooden legs'
                                         borderRadius='lg'
                                         width={300}
-                                        height={270}
+                                        height={{base: 200, md: 270}}
                                     />
                                 </CardBody>
-                                <CardFooter>
+                                <CardFooter p={{base: 0, md: 1}} mt={5}>
                                     <Button
                                         as="a"
                                         href={anfitrionesURL}
