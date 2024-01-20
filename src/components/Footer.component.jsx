@@ -57,7 +57,7 @@ const Footer = () => {
         justify={{ base: 'center', md: 'space-between' }}
         textAlign={{ base: 'center', md: 'center' }}>
         <Logo />
-        <Text>© 2023 Unipensiones. Todos los derechos reservados</Text>
+        <Text>© 2024 Unipensiones. Todos los derechos reservados</Text>
         <Stack direction={'row'} spacing={6} alignItems={'center'} justifyContent={'center'}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
