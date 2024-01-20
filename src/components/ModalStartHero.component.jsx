@@ -41,7 +41,7 @@ const ModalStartHero = () => {
                 <ModalOverlay />
                 <ModalContent>
                     <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={5}>
-                        <Image src={logo} width={100} height={100} borderRadius={5} />
+                        <Image src={logo} width={{base: 50, md: 100}} height={{base: 50, md: 100}} borderRadius={5} />
                     </Box>
                     <ModalHeader textAlign={'center'}>¿Como quieres utilizar Unipensiones?</ModalHeader>
                     <ModalCloseButton _hover={{ bg: "black", color: "white" }} />
