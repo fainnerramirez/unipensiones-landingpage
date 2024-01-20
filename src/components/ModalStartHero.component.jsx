@@ -66,7 +66,7 @@ const ModalStartHero = () => {
                                         onClick={() =>
                                             toast({
                                                 title: 'Estamos terminando de construirlo para tí',
-                                                description: "Estará habilitado el día 25 de Enero De 2024 🥳",
+                                                description: "Estará habilitado el día 1 de Febrero De 2024 🥳",
                                                 status: 'info',
                                                 duration: 9000,
                                                 isClosable: true,
