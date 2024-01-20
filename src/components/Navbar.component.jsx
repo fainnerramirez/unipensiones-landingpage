@@ -46,6 +46,7 @@ const Navbar = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center' }}>
           <Text
+             display={{base: 'none', md: 'block'}}
             fontFamily={'heading'}
             as="b"
             color={useColorModeValue('gray.800', 'white')}>

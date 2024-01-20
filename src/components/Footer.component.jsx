@@ -12,7 +12,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const Logo = (props) => {
   return (
-    <Text as="b">Unipensiones</Text>
+    <Text as="b" >Unipensiones</Text>
   )
 }
 
