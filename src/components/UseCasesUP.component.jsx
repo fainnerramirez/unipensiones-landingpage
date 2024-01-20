@@ -1,9 +1,13 @@
-import { Box, HStack, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, HStack, Heading, Image, Stack, Text, useToast } from '@chakra-ui/react'
 import React from 'react'
 import GroupE from "../assets/grupoe.jpg"
 import GroupA from "../assets/groupA.jpg"
+import { useState } from 'react'
 
 const UseCasesUP = () => {
+    const [anfitrionesURL, setAnfitrionesURL] = useState('https://anfitriones.unipensiones.app/')
+    const toast = useToast();
+
     return (
         <Box>
             <Heading textAlign={'center'}>
@@ -29,9 +33,24 @@ const UseCasesUP = () => {
                                 Con Unipensiones para Estudiantes, tu búsqueda de alojamiento universitario se transforma en una experiencia sin complicaciones, permitiéndote concentrarte en lo que realmente importa: tu educación y tu vida estudiantil. Únete a nuestra comunidad y descubre la forma más eficiente y emocionante de encontrar el lugar perfecto para llamar hogar durante tu trayectoria académica.
                             </Text>
                         </Box>
+                        <Box>
+                            <Button 
+                                colorScheme='blue' 
+                                onClick={() =>
+                                    toast({
+                                        title: 'Estamos terminando de construirlo para tí',
+                                        description: "Estará habilitado el día 1 de Febrero De 2024 🥳",
+                                        status: 'info',
+                                        duration: 9000,
+                                        isClosable: true,
+                                        variant: 'top-accent',
+                                        position: 'top'
+                                    })
+                                }>Explorar</Button>
+                        </Box>
                     </Box>
                 </HStack>
-                <HStack spacing={10} mt={10}>
+                <HStack spacing={10} mt={10} mb={10}>
                     <Box width={'50%'}>
                         <Text fontSize={'2xl'} textAlign={'left'}>
                             <b>Unipensiones para anfitriones</b>
@@ -43,6 +62,9 @@ const UseCasesUP = () => {
                                 Además, la plataforma facilita la comunicación con posibles inquilinos. Responde a consultas, acepta solicitudes de estudiantes y gestiona las reservas de manera eficiente. Con Unipensiones para Anfitriones, puedes construir relaciones positivas con los estudiantes, recibir reseñas valiosas y contribuir al ambiente universitario. <br />
                                 Únete a la red de anfitriones comprometidos y descubre cómo Unipensiones para Anfitriones puede simplificar el proceso de compartir tu espacio, permitiéndote disfrutar de una experiencia enriquecedora mientras apoyas a la comunidad estudiantil. ¡Haz que tu hogar sea parte de la emocionante travesía universitaria de estudiantes de todo el país! <br />
                             </Text>
+                        </Box>
+                        <Box>
+                            <Button as="a" href={anfitrionesURL} target='_blank' colorScheme='blue'>Explorar</Button>
                         </Box>
                     </Box>
                     <Box width={'50%'}>
