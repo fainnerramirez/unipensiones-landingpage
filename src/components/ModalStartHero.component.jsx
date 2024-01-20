@@ -1,4 +1,5 @@
 import {
+    Box,
     Button,
     Card,
     CardBody,
@@ -13,8 +14,9 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { AiOutlineArrowRight } from "react-icons/ai";
-import anfitrion from "../assets/anfitrion.png";
-import student from "../assets/student.png";
+import anfitrion from "../assets/anfitrion.jpg";
+import student from "../assets/estudiante.jpg";
+import logo from "../assets/logoup.png";
 
 const ModalStartHero = () => {
 
@@ -28,25 +30,28 @@ const ModalStartHero = () => {
                 fontWeight={'normal'}
                 px={6}
                 colorScheme={'pink'}
-                bg={'pink.500'}
-                _hover={{ bg: 'pink.400' }}
+                bg={'blue.500'}
+                _hover={{ bg: 'blue.400' }}
                 onClick={onOpen}>
                 ¡Únete a la Experiencia!
             </Button>
             <Modal isOpen={isOpen} onClose={onClose} size={'3xl'}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader textAlign={'center'}>¿Cual es tu Rol?</ModalHeader>
-                    <ModalCloseButton _hover={{bg:"pink.500", color: "white"}}/>
+                    <Box display={'flex'} justifyContent={'center'} alignItems={'center'} mt={5}>
+                        <Image src={logo} width={100} height={100} borderRadius={5}/>
+                    </Box>
+                    <ModalHeader textAlign={'center'}>¿Como quieres utilizar Unipensiones?</ModalHeader>
+                    <ModalCloseButton _hover={{bg:"black", color: "white"}}/>
                     <ModalBody>
-                        <Stack direction={['column', 'row']} spacing={10} justify={'center'}>
+                        <Stack direction={['column', 'row']} spacing={5} justify={'center'}>
                             <Card maxW='sm' border={'none'} boxShadow={'none'}>
                                 <CardBody>
                                     <Image
                                         src={student}
                                         alt='Green double couch with wooden legs'
                                         borderRadius='lg'
-                                        width={270}
+                                        width={300}
                                         height={270}
                                     />
                                 </CardBody>
@@ -56,7 +61,7 @@ const ModalStartHero = () => {
                                         href='https://unipensiones.vercel.app/'
                                         target={'_blank'}
                                         variant='solid' 
-                                        colorScheme='pink' 
+                                        colorScheme='blue' 
                                         width={'full'}
                                         rightIcon={<AiOutlineArrowRight />}>
                                         Soy Estudiante
@@ -69,14 +74,14 @@ const ModalStartHero = () => {
                                         src={anfitrion}
                                         alt='Green double couch with wooden legs'
                                         borderRadius='lg'
-                                        width={270}
+                                        width={300}
                                         height={270}
                                     />
                                 </CardBody>
                                 <CardFooter>
                                     <Button 
                                         variant='solid' 
-                                        colorScheme='pink' 
+                                        colorScheme='blue' 
                                         width={'full'} 
                                         rightIcon={<AiOutlineArrowRight />}>
                                         Soy Anfitrión (a)
