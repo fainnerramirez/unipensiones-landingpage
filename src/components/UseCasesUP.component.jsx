@@ -7,6 +7,7 @@ import { useState } from 'react'
 const UseCasesUP = () => {
     const toast = useToast();
     const [anfitrionesURL, setAnfitrionesURL] = useState('https://anfitriones.unipensiones.app/')
+    const [estudiantesURL, setEstudiantesURL] = useState('https://estudiantes.unipensiones.app/')
 
     return (
         <Box>
@@ -35,18 +36,12 @@ const UseCasesUP = () => {
                         </Box>
                         <Box>
                             <Button 
+                                as="a"
+                                href={estudiantesURL}
                                 colorScheme='blue' 
-                                onClick={() =>
-                                    toast({
-                                        title: 'Estamos terminando de construirlo para tí',
-                                        description: "Estará habilitado el día 1 de Febrero De 2024 🥳",
-                                        status: 'info',
-                                        duration: 9000,
-                                        isClosable: true,
-                                        variant: 'top-accent',
-                                        position: 'top'
-                                    })
-                                }>Explorar</Button>
+                                target='_blank'
+                                >
+                                    Explorar</Button>
                         </Box>
                     </Box>
                 </HStack>
