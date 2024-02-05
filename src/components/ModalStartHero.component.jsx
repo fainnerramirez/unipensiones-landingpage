@@ -21,6 +21,7 @@ import logo from "../assets/logoup.png";
 const ModalStartHero = () => {
 
     const [anfitrionesURL, setAnfitrionesURL] = useState('https://anfitriones.unipensiones.app/')
+    const [estudianteURL, setEstudianteURL] = useState('https://estudiantes.unipensiones.app/')
     const { isOpen, onOpen, onClose } = useDisclosure()
     const toast = useToast();
 
@@ -51,7 +52,7 @@ const ModalStartHero = () => {
                                 <CardBody p={0}>
                                     <Image
                                         src={student}
-                                        alt='Green double couch with wooden legs'
+                                        alt='Imagen student'
                                         borderRadius='lg'
                                         width={{ base: 200, md: 300 }}
                                         height={{ base: 170, md: 270 }}
@@ -59,20 +60,13 @@ const ModalStartHero = () => {
                                 </CardBody>
                                 <CardFooter p={{ base: 0, md: 1 }} mt={5}>
                                     <Button
+                                        as={'a'}
+                                        href={estudianteURL}
+                                        target={'_blank'}
                                         variant='solid'
                                         colorScheme='blue'
                                         width={'full'}
-                                        rightIcon={<AiOutlineArrowRight />}
-                                        onClick={() =>
-                                            toast({
-                                                title: 'Estamos terminando de construirlo para tí',
-                                                description: "Estará habilitado el día 1 de Febrero De 2024 🥳",
-                                                status: 'info',
-                                                duration: 9000,
-                                                isClosable: true,
-                                                variant: 'top-accent',
-                                                position: 'top'
-                                            })
+                                        rightIcon={<AiOutlineArrowRight />
                                         }>
                                         Soy Estudiante
                                     </Button>
@@ -82,7 +76,7 @@ const ModalStartHero = () => {
                                 <CardBody p={0}>
                                     <Image
                                         src={anfitrion}
-                                        alt='Green double couch with wooden legs'
+                                        alt='imagen anfitrion'
                                         borderRadius='lg'
                                         width={{ base: 200, md: 300 }}
                                         height={{ base: 170, md: 270 }}

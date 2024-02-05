@@ -5,8 +5,8 @@ import GroupA from "../assets/groupA.jpg"
 import { useState } from 'react'
 
 const UseCasesUP = () => {
-    const [anfitrionesURL, setAnfitrionesURL] = useState('https://anfitriones.unipensiones.app/')
     const toast = useToast();
+    const [anfitrionesURL, setAnfitrionesURL] = useState('https://anfitriones.unipensiones.app/')
 
     return (
         <Box>

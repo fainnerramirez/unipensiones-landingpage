@@ -16,7 +16,7 @@ const TextDinamic = () => {
 
     useEffect(() => {
         const intervalo = setInterval(() => {
-            setIndiceTexto((prevIndice) => (prevIndice + 1) % textos.length);
+            setIndiceTexto((prevIndice) => (prevIndice + 1) % (textos.length -1 ));
         }, 3000); // Cambia el valor de intervalo según tus preferencias
 
         return () => clearInterval(intervalo);
